@@ -1,0 +1,31 @@
+<html>
+<body ng-app="scrum.demo">
+	<div n g-controller="ScrumController">
+		{{person.name}} is {{person.age}}
+ years old	</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+  <script>
+  		(function(){
+
+  				'use_strict';
+
+  				angular.module('scrum.demo', [])
+  				  		.controller('scrumController', [ '$scope',ScrumController]);
+
+  		 function ScrumController($scope){
+
+  		 	 $scope.person = {
+
+  		 		name = 'sumedh',
+  		 		age = 23
+  		 	};
+  		}
+
+  		}());
+
+
+  </script>
+
+</body>
+
+</html> 
